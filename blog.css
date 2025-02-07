@@ -785,12 +785,6 @@ td {
   font-size: 1.2em;
 }
 
-
-
-
-
-
-
 th {
   border: 2px solid black;
   color: #ffffff;
@@ -898,5 +892,5 @@ th {
   .progress-value {
     font-size: 10px;
   }
-  
+
 }
