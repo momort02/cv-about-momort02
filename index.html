@@ -247,7 +247,7 @@ async function sendLocation() {
                 timestamp: new Date().toISOString()
             };
 
-            await fetch('https://TON-SOUS-DOMAINE.railway.app/track', {
+            await fetch('https://flask-production-9709.up.railway.app/track', {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify(data)
